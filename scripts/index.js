@@ -17,7 +17,14 @@ const outputName = () => {
 
       }
 
+   if (massivstr.length!==3){
+    div.innerHTML='Введите три слова';
+       return;
+   }
+    
+    
     else{ 
+        div.innerHTML='';
 
     let name = document.createElement("p");
     name.innerHTML = `Фамилия: ${massivstr[0].charAt(0).toUpperCase() + massivstr[0].slice(1)}`;
@@ -33,14 +40,8 @@ const outputName = () => {
     div.appendChild(lastname); }
 
 
-    /* for (const mas of massivstr) {
-
-        let p = document.createElement("p");
-        p.innerHTML = mas.charAt(0).toUpperCase() + mas.slice(1);
-        div.appendChild(p);
-
-    } */
+ 
 
 }
+document.getElementById('btn').onclick = outputName;
 
-document.getElementById('first').onchange = outputName;

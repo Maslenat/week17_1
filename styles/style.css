@@ -17,3 +17,14 @@ input {
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
 }
+.btn {
+    width: 150px;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(102, 21, 102);
+    color: antiquewhite;
+    border-radius: 4px;
+    border: 1px solid antiquewhite;
+
+
+}
