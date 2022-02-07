@@ -42,3 +42,17 @@ const outputName = () => {
 
 }
 document.getElementById('btn').onclick = outputName;
+
+
+//очистка блока при удалении значений из инпута  без нажатия на кнопку, если перед этим было введено неверное количество слов
+const change = () => {
+
+    let value = document.getElementById('first').value;
+    let div = document.getElementById('outputname');
+    if(value==0)
+   
+        {div.innerHTML = '';
+        return;}
+   
+}
+document.getElementById('first').onchange = change;
