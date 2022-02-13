@@ -24,13 +24,13 @@ const outputName = () => {
         div.innerHTML = '';
 
         let name = document.createElement("p");
-        name.innerHTML = `Фамилия: ${massivstr[0].charAt(0).toUpperCase() + massivstr[0].slice(1)}`;
+        name.innerHTML = `Фамилия: ${massivstr[0].charAt(0).toUpperCase() + massivstr[0].slice(1).toLowerCase()}`;
 
         let secondname = document.createElement("p");
-        secondname.innerHTML = `Имя: ${massivstr[1].charAt(0).toUpperCase() + massivstr[1].slice(1)}`;
+        secondname.innerHTML = `Имя: ${massivstr[1].charAt(0).toUpperCase() + massivstr[1].slice(1).toLowerCase()}`;
 
         let lastname = document.createElement("p");
-        lastname.innerHTML = `Отчество: ${massivstr[2].charAt(0).toUpperCase() + massivstr[2].slice(1)}`;
+        lastname.innerHTML = `Отчество: ${massivstr[2].charAt(0).toUpperCase() + massivstr[2].slice(1).toLowerCase()}`;
 
         div.appendChild(name);
         div.appendChild(secondname);
@@ -49,10 +49,10 @@ const change = () => {
 
     let value = document.getElementById('first').value;
     let div = document.getElementById('outputname');
-    if(value==0)
-   
-        {div.innerHTML = '';
-        return;}
-   
+    if (value == 0) {
+        div.innerHTML = '';
+        return;
+    }
+
 }
 document.getElementById('first').onchange = change;
